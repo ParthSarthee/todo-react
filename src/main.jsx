@@ -5,16 +5,16 @@ import "./index.css";
 import { Counter } from "./MyComponent.jsx";
 import Greeting from "./Greeting.jsx";
 import MyForm from "./MyForm.jsx";
+import Looping from "./Looping.jsx";
 
 const NameContext = createContext("");
 
 createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<NameContext.Provider value="Ramu">
-			<Greeting />
-			<Counter />
-			<MyForm />
-		</NameContext.Provider>
+		{/* <Greeting /> */}
+		{/* <Counter /> */}
+		{/* <MyForm /> */}
+		<Looping />
 	</StrictMode>
 );
 
@@ -22,6 +22,5 @@ export { NameContext };
 
 // Mathmatical/Programmatical Components
 // A Javascript function that returns HTML used as Tags.
-// Loops & Conditional Rendering
 // TailwindCSS Integration
 // Todo App
